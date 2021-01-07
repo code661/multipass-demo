@@ -1,0 +1,7 @@
+#cloud-config
+
+runcmd:
+  - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
+  - wget https://releases.leanapp.cn/leancloud/lean-cli/releases/download/v0.21.0/lean-cli-x64.deb
+  - sudo dpkg -i lean-cli-x64.deb
